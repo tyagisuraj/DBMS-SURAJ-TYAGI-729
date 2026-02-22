@@ -1,23 +1,23 @@
 ## 1. Create Database
 
-```sql
+
 CREATE DATABASE SURAKTYAGI;
 USE SURAJTYAGI;
-```
+
 
 ## 2. Create DEPARTMENT table
 
-```sql
+
 
 CREATE TABLE department (
     deptno INT (2) PRIMARY KEY,
     dname VARCHAR(15) NOT NULL
 );
-```
+
 
 ## 3. Create EMPLOYEE table
 
-```sql
+
 CREATE TABLE employee (
     empno INT(4) PRIMARY KEY,
     ename VARCHAR(20) NOT NULL,
@@ -29,22 +29,22 @@ CREATE TABLE employee (
     deptno INT(2),
     FOREIGN KEY (deptno) REFERENCES department(deptno)
 );
-```
+
 
 ## 4. INSERT VALUES INTO DEPARTMENT
 
-```sql
+
 
 INSERT INTO department VALUES
 (10,'RESEARCH'),
 (20,'ACCOUNTING'),
 (30,'SALES'),
 (40,'OPERATIONS');
-```
+
 
 ## 5. INSERT VALUES INTO EMPLOYEE
 
-```sql
+
 INSERT INTO employee VALUES
 (7369,'SMITH','CLERK',7902,'1980-12-17',800,NULL,20),
 (7499,'ALLEN','SALESMAN',7698,'1981-02-20',1600,300,30),
