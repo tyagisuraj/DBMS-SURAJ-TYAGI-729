@@ -44,8 +44,8 @@ FROM employee
 WHERE LENGTH(ename) = 5;
 
 
-## 4.''' Names of employees whose second alphabet is A
-(same as Q2 – repeated in syllabus)'''
+## 4.''' Names of employees whose second alphabet is A'''
+
 
 
 SELECT ename FROM employee
