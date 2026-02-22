@@ -62,17 +62,16 @@ WHERE job NOT IN ('SALESMAN','CLERK','ANALYST');
 
 
 
-## 6.''' Employee name & annual salary,
-highest salary first'''
+## 6.''' Employee name & annual salary,highest salary first'''
 
 
 SELECT ename, sal*12 AS annual_salary FROM employee
 ORDER BY sal DESC;
 
 
-## 7.''' Name, sal, hra, pf, da, totalsal
+## 7.''' Name, sal, hra, pf, da, totalsal'''
 
-HRA = 15% of sal
+'''HRA = 15% of sal
 
 DA = 10% of sal
 
