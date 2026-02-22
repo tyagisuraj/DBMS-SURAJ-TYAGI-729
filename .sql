@@ -60,56 +60,55 @@ INSERT INTO employee VALUES
 (7900,'JAMES','CLERK',7698,'1981-12-03',950,NULL,30),
 (7902,'FORD','ANALYST',7566,'1981-12-03',3000,NULL,20),
 (7934,'MILLER','CLERK',7782,'1982-01-23',1300,NULL,10);
-```
+
 
 ### Show Records
 
-```sql
+
 SELECT * FROM employee;
 SELECT * FROM department;
-```
+
 
 ## REQUIRED QUERIES
 
 ## 1. Create Employee_master table with data using Employee table
 
-```sql
+
 CREATE TABLE employee_master AS
 SELECT * FROM employee;
-```
+
 
 ## 2. Delete all records from Employee_master whose DeptNo is 10
 
-```sql
+
 DELETE FROM employee_master
 WHERE deptno = 10;
-```
+
 
 ## 3. Update salary by 10% for DeptNo 20
 
-```sql
+
 UPDATE employee_master
 SET sal = sal + (sal * 0.10)
 WHERE deptno = 20;
-```
+
 
 ## 4. Alter SAL with size 10,2 in Employee_master
 
-```sql
+
 ALTER TABLE employee_master
 MODIFY sal DECIMAL(10,2);
-```
+
 
 ## 5. Drop Employee_master table
 
-```sql
+
 DROP TABLE employee_master;
-```
 ---
 ## -- CHECK OUTPUT
 
-```sql
+
 SELECT * FROM employee;
 SELECT * FROM department;
 SELECT * FROM employee_master;
-```
+
