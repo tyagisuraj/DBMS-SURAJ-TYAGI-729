@@ -79,7 +79,6 @@ PF = 5% of sal
 
 TotalSal = (sal + hra + da) − pf'''
 
-
 SELECT
     ename,
     sal,
@@ -98,11 +97,9 @@ WHERE comm IS NULL OR comm = 0;
 
 ## 9.''' Employees whose salary is > 3000 after 20% increment'''
 
-
 SELECT ename FROM employee WHERE sal + (sal * 0.20) > 3000;
 
 
 ## 10. '''Employees whose salary contains at least 3 digits'''
-
 
 SELECT ename, sal FROM employee WHERE LENGTH(sal) >= 3;
