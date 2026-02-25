@@ -107,7 +107,7 @@ SELECT CONCAT(
 ## 14. Display the length of your name
 
 
-SELECT LENGTH('MOHAMMAD TASIN') AS name_length;
+SELECT LENGTH('SURAJ TYAGI') AS name_length;
 
 
 ## 15. Display the length of all employee names
