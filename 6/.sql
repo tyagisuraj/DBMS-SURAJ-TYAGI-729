@@ -45,12 +45,12 @@ FROM employee e;
 ## 2. Display your age in days
 
 
-SELECT DATEDIFF(CURDATE(), '2000-01-01') AS age_in_days;
+SELECT DATEDIFF(CURDATE(), '2006-11-29') AS age_in_days;
 
 ## 3. Display your age in months
 
 
-SELECT TIMESTAMPDIFF(MONTH, '2000-01-01', CURDATE()) AS age_in_months;
+SELECT TIMESTAMPDIFF(MONTH, '2006-11-29', CURDATE()) AS age_in_months;
 
 
 ## 4. Display current date as 15th August Friday Nineteen Ninety-Seven
